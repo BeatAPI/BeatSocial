@@ -1,0 +1,4 @@
+#!/bin/sh
+# Runs BeatSocial from this checkout without installing it.
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+PYTHONPATH="$DIR${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m beatsocial "$@"
